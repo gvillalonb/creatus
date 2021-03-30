@@ -861,7 +861,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -978,12 +978,12 @@ section {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
+/* .team {
   background: #fff;
   padding: 60px 0;
 }
@@ -1054,7 +1054,7 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing

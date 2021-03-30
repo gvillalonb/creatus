@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Get Startet Button // BOTON COMENZAR */
+/* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
   color: #fff;
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Mobile Navigation // NAVEGACION DISPOSITIVOS MOVILES */
+/* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
   top: 18px;
@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section // CARUSEL
+# Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -521,14 +521,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Sections General // ¿Por qué es conveniente automatizar?
+# Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .section-bg {
-  background-color: #dfdddd;
+  background-color: #ccc6c6;
 }
 
 .section-title {
@@ -550,7 +550,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About // ¿Por qué es conveniente automatizar?
+# About
 --------------------------------------------------------------*/
 .about .content {
   padding: 30px 0;
@@ -659,11 +659,15 @@ section {
 } */
 
 /*--------------------------------------------------------------
-# Clients // Certificaciones
+# Clients
 --------------------------------------------------------------*/
 .clients {
   padding: 15px 0;
   text-align: center;
+}
+
+.section-bg2 { /* Color fondo seccion certificados */
+  /* background-color: #ccc6c6; */
 }
 
 .clients img {
@@ -684,6 +688,70 @@ section {
     max-width: 40%;
   }
 }
+
+/*--------------------------------------------------------------
+# sub-heading (linea que se estira)
+--------------------------------------------------------------*/
+
+
+
+
+.sub-heading
+{
+    position: relative;
+    margin-bottom: 70px; /* Separacion vertical, entre la linea azul y los bloques de texto*/
+}
+
+.sub-heading:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40%; /* posicion linea azul hacia la izquierda */
+    margin-left: -0%;
+    width: 20%; /* Ancho de la linea azul estatica*/
+    height: 1px;
+    background-color: #5c9f24;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before
+{
+    width: 64%;
+    margin-left: -22%; /* Distancia que recorre la linea azul hacia los extremos */
+}
+
+.sub-heading:after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%; /* posicion linea ploma hacia la izquierda */
+    margin-left:0%; /* Largo de linea ploma desde el centro hacia a la izquierda */
+    width: 0%;   /* Elimine linea ploma */
+    height: 2px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p
+{
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;  /* distacia entre saltos de linea del parrafo */
+    letter-spacing: 0.025em;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -709,11 +777,11 @@ section {
   font-size: 40px;
   overflow: hidden;
   padding-top: 20px;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0 45px rgba(0, 0, 0, 0.15);
 }
 
 .services .icon-box:hover .icon i {
-  box-shadow: 0px 0 25px rgba(92, 159, 36, 0.3);
+  box-shadow: 0px 0 45px rgba(92, 159, 36, 0.3);
 }
 
 .services .title {
@@ -750,7 +818,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us // TE ACOMPAÑAMOS EN ESTE VIAJE
+# Why Us
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 50px 30px;
@@ -791,7 +859,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio // NUESTROS CLIENTES
+# Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -913,9 +981,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team // EQUIPOS
+# Team
 --------------------------------------------------------------*/
-/* .team {
+.team {
   background: #fff;
   padding: 60px 0;
 }
@@ -987,9 +1055,9 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
- */
+
 /*--------------------------------------------------------------
-# Pricing // NO VA
+# Pricing
 --------------------------------------------------------------*/
 /* .pricing .box {
   padding: 20px;
@@ -1097,7 +1165,7 @@ section {
 } */
 
 /*--------------------------------------------------------------
-# Frequently Asked Questions // LA TECNOLOGÍA DETRÁS DE LA AUTOMATIZACIÓN
+# Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
   padding: 0 100px;

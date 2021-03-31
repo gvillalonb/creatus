@@ -550,7 +550,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# About // ¿Por qué es conveniente automatizar?
 --------------------------------------------------------------*/
 .about .content {
   padding: 30px 0;
@@ -588,9 +588,10 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  /* background: url("../img/about.jpg") center center no-repeat; */
   background-size: cover;
   min-height: 400px;
+  margin-top: 100px; /* NUEVO */
 }
 
 @media (max-width: 991px) {

@@ -27,6 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
+  <!-- SCROOL REVEAL // linkeamos una biblioteca para crear animaciones de imagenes-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <!-- =======================================================
   * Template Name: Groovin - v2.2.1
   * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
@@ -152,13 +156,21 @@
       <div class="container">
 
         <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-          <video width="350" height="350" margin-top="100px" controls>
+          <!-- <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"> -->
+          <!-- <video width="350" height="350" margin-top="100px" controls>
             <source src="assets/img/video/creatus.mp4" type="video/mp4">
             Tu navegador no soporta los vídeos de HTML5
-        </video>
-        <!-- https://www.youtube.com/watch?v=opmR3rJJJzw (musica de video) -->
+        </video> -->
+
+        <div class="video-box col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=Lawmjth_9ds" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        <!-- </div> -->
+
         </div>
+
+
+        <!-- https://www.youtube.com/watch?v=opmR3rJJJzw (musica de video) -->
         <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
           <div class="content d-flex flex-column justify-content-center">
             <h3>¿Por qué es conveniente automatizar?
@@ -422,12 +434,6 @@
     
     <!-- End Why Us Section -->
 
-        <!-- ======= Linea Section ======= -->
-        <section id="linea" class="sub-heading">
-          <div class="container">
-          </section>
-          <!-- End Linea Section -->
-
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg2">
       <div class="container">
@@ -541,11 +547,11 @@
 
 
     <!-- ======= Portfolio Section ======= -->
-<!--     <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
-          <h2>Nuestros Clientes</h2>
+          <h2>Proyectos Realizados</h2>
           <p></p>
         </div>
         <br>
@@ -553,17 +559,18 @@
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-app">Proyectos RPA</li>
+              <!-- <li data-filter="*" class="filter-active">Todos</li> -->
+              <li data-filter=".filter-web" class="filter-active">E-Commerce</li>
               <li data-filter=".filter-card">Sitios Web</li>
-              <li data-filter=".filter-web">Sitios E-commerce</li>
+              <li data-filter=".filter-app">Proyectos RPA</li>
+              <!-- <li data-filter=".filter-web">Sitios E-commerce</li> -->
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -575,7 +582,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -591,7 +598,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -603,7 +610,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
@@ -633,7 +640,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -645,7 +652,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
@@ -692,7 +699,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
@@ -857,6 +864,12 @@
 
     <!-- ======= Contact Section ======= -->
 
+    <!-- ======= Linea Section ======= -->
+    <section id="linea" class="sub-heading">
+      <div class="container">
+      </section>
+      <!-- End Linea Section -->
+
 <section class="contact-area" id="contact">
 <div class="container">
 <div class="row">
@@ -987,7 +1000,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy;&nbsp;<script>document.write(new Date().getFullYear())</script><strong><span>&nbsp;Creatus</span></strong>. All Rights Reserved
+        &copy;&nbsp;<script>document.write(new Date().getFullYear())</script><strong><span>&nbsp;Creatus</span></strong>. Todos los derechos Reservados.
       </div>
       
       <div class="credits">
@@ -1000,6 +1013,28 @@
   <!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+<!-- esto es un METODO que permite animacion de imagenes, viene de la clase scrollReveal en el head -->
+  <script>
+    window.sr = ScrollReveal();
+
+    sr.reveal('#services', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+  });
+
+  sr.reveal('#clients', {
+    duration: 2000,
+    origin: 'right',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+
+  </script>
+<!-- Fin METODO -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

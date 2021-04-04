@@ -27,19 +27,28 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- whatsapp css-->
+  <link rel="stylesheet" href="style.css">
+
 
   <!-- SCROOL REVEAL // linkeamos una biblioteca para crear animaciones de imagenes-->
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- =======================================================
-  * Template Name: Groovin - v2.2.1
-  * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Template By: BootstrapMade.com
   ======================================================== -->
 </head>
 
 <body>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=56968312523&text=Hola,%20quisiera%20recibir%20mas%20informacion." class="float" target="_blank">
+  <i class="bx bxl-whatsapp my-float"></i>
+  </a>
+
+
+
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -55,7 +64,7 @@
           <li><a href="#about">RPA</a></li>
           <li><a href="#services">E-Commerce</a></li>
           <li><a href="#team">Sitios Web</a></li>
-          <li><a href="#portfolio">Clientes</a></li>
+          <li><a href="#testimonials">Clientes</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -253,7 +262,7 @@
 
       <!-- ======= Frequently Asked Questions Section ======= -->
       <section id="faq" class="faq section-bg">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
   
           <div class="section-title">
             <h2>La tecnología detrás de la automatización</h2>
@@ -338,7 +347,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>te acompañamos en este viaje</h2>
+          <h2 class="animate__animated animate__fadeInDown">te acompañamos en este viaje</h2>
           <p>Establecemos una comunicacion con nuestro cliente que permite integrarlo a nuestra
             metodologia de desarrollo agil. 
           </p>
@@ -408,7 +417,7 @@
               <p>En esta etapa trabajamos nuevamente con el dueño/a del proceso eligido para robotizar. Con el fin de 
                 obtener elementos claves para la construccion del documento tecnico TDD (Technical Design Doc).
                 Una vez revisado y aprobado el TDD, comienza la etapa de desarrollo.<br>
-                Durante el periodo desarrollo del robot, se realizan pruebas por etapas, para de esta manera garantizar
+                Durante el periodo de desarrollo del robot, se realizan pruebas por etapas, para de esta manera garantizar
                 un correcto funcionamiento durante la marcha blanca y despliegue a produccion.
               </p>
             </div>
@@ -457,7 +466,7 @@
 
           <div class="col-lg-3 col-md-4 col-6">
             <div class="client-logo">
-              <img src="assets/img/clients/Screenshot_1.png" class="img-fluid" alt="">
+              <img src="assets/img/clients/scrum-master.png" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -561,104 +570,106 @@
     <!-- End Services Section -->
 
 
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Sitios Web</h2>
-            <p>Te ayudamos a crear tu sitio web responsive para publicidad, Blog o vitrina digital para el proyecto que necesites. 
-              Utilizando las tecnologias mas usadas en la web.</p>
-          </div>
-          <br>
-  
-          <div class="row">
-  
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="member">
-                <img src="assets/img/team/wordpress.png" class="img-fluid" alt="">
-                <!-- <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Walter White</h4>
-                    <span>Chief Executive Officer</span>
-                    <div class="social">
-                      <a href=""><i class="icofont-twitter"></i></a>
-                      <a href=""><i class="icofont-facebook"></i></a>
-                      <a href=""><i class="icofont-instagram"></i></a>
-                      <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
-              <div class="member">
-                <img src="assets/img/team/bootstrap.png" class="img-fluid" alt="">
-                <!-- <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
-                    <div class="social">
-                      <a href=""><i class="icofont-twitter"></i></a>
-                      <a href=""><i class="icofont-facebook"></i></a>
-                      <a href=""><i class="icofont-instagram"></i></a>
-                      <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-              <div class="member">
-                <img src="assets/img/team/JS.png" class="img-fluid" alt="">
-                <!-- <div class="member-info">
-                  <div class="member-info-content"
-                  >
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                    <div class="social">
-                      <a href=""><i class="icofont-twitter"></i></a>
-                      <a href=""><i class="icofont-facebook"></i></a>
-                      <a href=""><i class="icofont-instagram"></i></a>
-                      <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-              <div class="member">
-                <img src="assets/img/team/php.png" class="img-fluid" alt="">
-                <!-- <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
-                    <div class="social">
-                      <a href=""><i class="icofont-twitter"></i></a>
-                      <a href=""><i class="icofont-facebook"></i></a>
-                      <a href=""><i class="icofont-instagram"></i></a>
-                      <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-  
-          </div>
-  
-        </div>
-      </section>
-      <!-- End Team Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
 
+        <div class="section-title">
+          <h2 class="animate__animated animate__fadeInDown">Sitios Web</h2>
+          <p>Te ayudamos a crear tu sitio web responsive para publicidad, Blog o vitrina digital para el proyecto que necesites. 
+            Utilizando las tecnologias mas usadas en la web.</p>
+        </div>
+        <br>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/team/wordpress.png" class="img-fluid" alt="">
+              <!-- <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/team/bootstrap.png" class="img-fluid" alt="">
+              <!-- <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="assets/img/team/JS.png" class="img-fluid" alt="">
+              <!-- <div class="member-info">
+                <div class="member-info-content"
+                >
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="assets/img/team/php.png" class="img-fluid" alt="">
+              <!-- <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+
+      <!-- ======= Linea Section ======= -->
+      <section id="linea" class="sub-heading">
+        <div class="container">
+        </section>
+        <!-- End Linea Section -->
 
   <!-- ======= Testimonials Section ======= -->
-  <section id="linea" class="sub-heading">
-    <div class="container">
-    </section>
-    <!-- End Linea Section -->
 
     <div class="section-title">
       <h2>Proyectos Realizados</h2>
@@ -1087,10 +1098,10 @@
           </div> -->
           <ul class="list-inline">
               <li class="list-inline-item"><i class='bx bxs-paper-plane'></i>&nbsp;&nbsp;</i><a>rpacreatus@gmail.com</a>&nbsp;&nbsp;&nbsp;|</li>
-              <li class="list-inline-item"><i class='bx bx-phone'></i>&nbsp;&nbsp;</i><a>+56-968312523&nbsp;&nbsp;+56-957167830</a>&nbsp;&nbsp;&nbsp;|</li>
-              <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>&nbsp;&nbsp;&nbsp;|</li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>&nbsp;&nbsp;&nbsp;|</li>
-              <li class="list-inline-item"><a href="https://web.whatsapp.com/"><i class="bx bxl-whatsapp"></i></a></li>
+              <li class="list-inline-item"><i class='bx bx-phone'></i>&nbsp;&nbsp;</i><a>+56-968312523&nbsp;&nbsp;+56-957167830</a>&nbsp;&nbsp;|</li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>&nbsp;&nbsp;|</li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>&nbsp;&nbsp;</li>
+              <!-- <li class="list-inline-item"><a href="https://web.whatsapp.com/"><i class="bx bxl-whatsapp"></i></a></li> -->
           </ul>
           <!-- <p class="copyright">CREATUS © &nbsp;<script>document.write(new Date().getFullYear())</script></p> -->
       </footer>

@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Creatus - RPA & WebSites</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="" name="rpa">
+  <meta content="" name="sitio web">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -45,10 +45,6 @@
   <a href="https://api.whatsapp.com/send?phone=56968312523&text=Hola,%20quisiera%20recibir%20mas%20informacion." class="float" target="_blank">
   <i class="bx bxl-whatsapp my-float"></i>
   </a>
-
-
-
-
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -134,7 +130,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Sitios Web Modernos</h2>
-                <p class="animate__animated animate__fadeInUp">Te ayudamos a publicar tu sitio web con un diseño simple pero moderno, a un bajo costo de mantencion.</p>
+                <p class="animate__animated animate__fadeInUp">Te ayudamos a publicar tu sitio web con un diseño simple y moderno, a un bajo costo de mantencion.</p>
                 <div>
                   <a href="#team" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer mas</a>
                 </div>
@@ -698,8 +694,8 @@
           <a href="https://www.santosdumont.cl/"><h4>santosdumont.cl</h4></a>
           <p>
             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Atención integral del paciente toma de signos vitales, revisión completa sistema
-            respiratorio, frecuencia cardiaca, nivel de azúcar, saturación de oxígeno, control de peso
+            Atención integral de pacientes, toma de signos vitales, sistema
+            respiratorio, frecuencia cardiaca, nivel de azúcar, saturación de oxígeno, control de peso.
             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           </p>
         </div>
@@ -994,89 +990,90 @@
   </div>
 </div>
 
-  <div id="app">
-      <div class="contact-block">
-        <br>
-          <!-- <h3>CONTÁCTANOS</h3> -->
-          <!-- <form method="POST" class="contact_form"> -->
-              <div class="row">
-                  <div class="col-sm-6 form-group">
+<div id="app">
+    <div class="contact-block">
+      <br>
+        <!-- <h3>CONTÁCTANOS</h3> -->
+        <!-- <form method="POST" class="contact_form"> -->
+            <div class="row">
+                <div class="col-sm-6 form-group">
 
-                      <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Ingresa tu Nombre" required="required" v-model="from_name">
-                      </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingresa tu Nombre" required="required" v-model="from_name">
+                    </div>
 
-                      <div class="form-group">
-                          <input type="email" class="form-control" placeholder="contacto@email.com" required="required" v-model="from_email">
-                      </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="contacto@email.com" required="required" v-model="from_email">
+                    </div>
 
-                      <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Telefono de Contacto" required="required" v-model="reply_to">
-                      </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Telefono de Contacto" required="required" v-model="reply_to">
+                    </div>
 
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="form-group">
-                          <textarea class="form-control" required="required" v-model="message"></textarea>
-                      </div>
-                      <div class="form-group">
-                          <!-- <input type="submit" class="btn default-btn btn-block" value="enviar mensaje"> -->
-                          <button @click="enviar" class="btn btn-success">
-                              Enviar
-                          </button>
-                      </div>
-                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <textarea class="form-control" required="required" v-model="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <!-- <input type="submit" class="btn default-btn btn-block" value="enviar mensaje"> -->
+                        <button @click="enviar" class="btn btn-success">
+                            Enviar
+                        </button>
+                        <br>
+                    </div>
+                </div>
 
-<!-- email JS -->
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
-                  </script>
-                  <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
-                  </script>
-                  <script>
-                      (function(){
-                          /*portal emailjs.com > Integration > API Keys > User ID: user_rHyyfd6AMxaII0UhPYnH8*/
-                          emailjs.init("user_rHyyfd6AMxaII0UhPYnH8"); 
-                          })();
-                      const vue = new Vue({
-                          el: '#app',
-                          data(){
-                              return {
-                                  from_name: '',
-                                  reply_to: '',
-                                  from_email: '',
-                                  message: '',
+<!----------------------------- email JS ----------------------------->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+          </script>
+          <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
+          </script>
+          <script>
+              (function(){
+                  /*portal emailjs.com > Integration > API Keys > User ID: user_rHyyfd6AMxaII0UhPYnH8*/
+                  emailjs.init("user_rHyyfd6AMxaII0UhPYnH8"); 
+                  })();
+              const vue = new Vue({
+                  el: '#app',
+                  data(){
+                      return {
+                          from_name: '',
+                          reply_to: '',
+                          from_email: '',
+                          message: '',
+                      }
+                  },
+                  methods: {
+                      enviar(){
+                          let data = {
+                              from_name: this.from_name,
+                              reply_to: this.reply_to,
+                              from_email: this.from_email,
+                              message: this.message,
+                          };
+                          /*portal emailjs.com > Email Services > Service ID > User ID: service_99y90lf // Email Template > Template ID: creatus_mail_template */
+                          emailjs.send("service_99y90lf","creatus_mail_template", data) 
+                          .then(function(response) {
+                              if(response.text === 'OK'){
+                                  alert('El correo se ha enviado de forma exitosa');
                               }
-                          },
-                          methods: {
-                              enviar(){
-                                  let data = {
-                                      from_name: this.from_name,
-                                      reply_to: this.reply_to,
-                                      from_email: this.from_email,
-                                      message: this.message,
-                                  };
-                                  /*portal emailjs.com > Email Services > Service ID > User ID: service_99y90lf // Email Template > Template ID: creatus_mail_template */
-                                  emailjs.send("service_99y90lf","creatus_mail_template", data) 
-                                  .then(function(response) {
-                                      if(response.text === 'OK'){
-                                          alert('El correo se ha enviado de forma exitosa');
-                                      }
-                                      console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                                  }, function(err) {
-                                      alert('Ocurrió un problema al enviar el correo');
-                                      console.log("FAILED. error=", err);
-                                  });
-                              }
-                          }
-                      });
-                  </script>
-                  <!-- End email JS -->
-              </div>
-  
-          </form>
+                              console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                          }, function(err) {
+                              alert('Ocurrió un problema al enviar el correo');
+                              console.log("FAILED. error=", err);
+                          });
+                      }
+                  }
+              });
+          </script>
+          <!----------------------------- End email JS ----------------------------->
       </div>
-          
-  </div>
+
+  </form>
+</div>
+  
+</div>
 </div>
 
 </section>
@@ -1115,7 +1112,7 @@
       </div>
       
       <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">Creatus Web-Sites</a>
+      Diseñado por <a href="https://www.creatus.cl/">Creatus Web-Sites</a>
       </div>
     </div>
   </footer>
@@ -1131,18 +1128,33 @@
     window.sr = ScrollReveal();
 
     sr.reveal('#services', {
-      duration: 2000,
+      duration: 1500,
       origin: 'left',
       distance: '300px',
       viewFactor: 0.2
   });
 
   sr.reveal('#clients', {
-    duration: 2000,
+    duration: 1500,
     origin: 'right',
     distance: '300px',
     viewFactor: 0.2
   });
+
+  sr.reveal('#team', {
+    duration: 1500,
+    origin: 'top',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+/*
+  sr.reveal('#about', {
+    duration: 1500,
+    origin: 'bottom',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+*/
 
   </script>
 <!-- Fin METODO -->

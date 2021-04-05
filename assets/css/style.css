@@ -608,7 +608,9 @@ section {
     max-width: 100%;
   }
 }
-/* ///////////////////////////////////////////// */
+
+/* ///////////// BOTON VIDEO ////////////////////// */
+
 .about .play-btn {
   width: 94px;
   height: 94px;
@@ -1936,26 +1938,45 @@ section {
   /* Credit to https://epicbootstrap.com/snippets/footer-basic */
 
 
-  .float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    left:10px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index:100;
-  }
-  .float:hover {
-    text-decoration: none;
-    color: #25d366;
-    background-color:#fff;
-  }
-  
-  .my-float{
-    margin-top:16px;
-  }
+/********** boton whatsapp ***********/
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:10px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color:#fff;
+}
+.my-float{
+  margin-top:16px;
+}
+/******** fin boton video ***********/
+
+
+
+
+/******** logo captcha ***********/
+/* .logo-captcha-img{
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  width: 70px;
+  height: 60px;
+  margin: 0 auto;
+  box-shadow: 0 0 4px #ddd;
+  transition: linear 100ms width;
+}
+.logo-captcha-img:hover {
+    width: 256px;
+} */

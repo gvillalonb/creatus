@@ -528,7 +528,7 @@ section {
 }
 
 .section-bg {
-  background-color: #ccc6c6;
+  background-color: #242222;
 }
 
 .section-title {
@@ -872,7 +872,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #5c9f24;
+  color: #078317;
   font-size: 40px;
   overflow: hidden;
   padding-top: 20px;
@@ -897,7 +897,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #5c9f24;
+  color: #078317;
 }
 
 .services .title::after {
@@ -919,6 +919,11 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+
+.why-us {
+  background-color: #242222;
+}
+
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);

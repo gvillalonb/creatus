@@ -205,12 +205,12 @@
 		startPosition: 0,
 		rtl: false,
 
-		smartSpeed: 250,
+		smartSpeed: 500,
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
 		responsive: {},
-		responsiveRefreshRate: 200,
+		responsiveRefreshRate: 900,
 		responsiveBaseElement: window,
 
 		fallbackEasing: 'swing',
@@ -1816,7 +1816,7 @@
 	 */
 	AutoRefresh.Defaults = {
 		autoRefresh: true,
-		autoRefreshInterval: 500
+		autoRefreshInterval: 900
 	};
 
 	/**

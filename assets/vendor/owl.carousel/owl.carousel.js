@@ -205,12 +205,12 @@
 		startPosition: 0,
 		rtl: false,
 
-		smartSpeed: 500,
+		smartSpeed: 250,
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
 		responsive: {},
-		responsiveRefreshRate: 900,
+		responsiveRefreshRate: 200,
 		responsiveBaseElement: window,
 
 		fallbackEasing: 'swing',

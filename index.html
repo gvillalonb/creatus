@@ -174,8 +174,7 @@
         
         <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
           <div class="content d-flex flex-column justify-content-center">
-            <h3>¿Por qué es conveniente automatizar?
-            </h3>
+            <h3>¿Por qué es conveniente automatizar?</h3>
             <p>
               Los beneficios para tu negocio son evidentes.
             </p>
@@ -390,9 +389,11 @@
 
     <section id="clients" class="clients section-bg2">
       <div class="container">
-        <div class="section-title">
+        <section id="clients-titulo">
+        <div class="section-title-clients">
           <h3>Somos un equipo certificado con las herramientas lideres para tu Proyecto RPA</h3>
         </div>
+      </section>
 
         <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
 
@@ -462,13 +463,13 @@
 
   <section id="services" class="services">
     <div class="container">
-
       <div class="section-title">
+        <section id="services-titulo">
         <span>E-Commerce</span>
         <h2>E-Commerce</h2>
         <p>Tu negocio merece un servicio de alta calidad, transparente y profesional que te ayude 
           a mejorar tus ventas y destacar sobre tu competencia a un precio justo..&nbsp;<b><a href="#contact">Contactanos !</a></b></p>
-          
+        </section>
       </div>
 
       <div class="row">
@@ -542,10 +543,12 @@
     <section id="team" class="team">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
+          <section id="team-titulo">
           <h2>Sitios Web</h2>
           <br>
           <p>Te ayudamos a crear tu sitio web responsive para publicidad, Blog o vitrina digital para el proyecto que necesites. 
             Utilizando las tecnologias mas usadas en la web</p>
+          </section>
         </div>
         <br>
         <br>
@@ -806,9 +809,23 @@
 
     sr.reveal('#services', {
       duration: 1500,
-      origin: 'left',
+      origin: 'top',
       distance: '300px',
       viewFactor: 0.2
+  });
+
+  sr.reveal('#services-titulo', {
+    duration: 1000,
+    origin: 'right',
+    distance: '300px',
+    viewFactor: 0.2
+});
+
+  sr.reveal('#clients-titulo', {
+    duration: 1000,
+    origin: 'right',
+    distance: '300px',
+    viewFactor: 0.2
   });
 
     sr.reveal('#clients', {
@@ -820,6 +837,13 @@
 
   sr.reveal('#team', {
     duration: 1500,
+    origin: 'top',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+
+  sr.reveal('#team-titulo', {
+    duration: 1000,
     origin: 'right',
     distance: '300px',
     viewFactor: 0.2

@@ -5,10 +5,11 @@
   --bg: #f7fafc;
   --text: #0f172a;
   --muted: #6b7280;
-  --accent: #0ea5a4; /* teal */
-  --accent-2: #06b6d4;
+  --accent: #0b8264; /* deeper teal */
+  --accent-2: #0891b2; /* vivid cyan */
   --card: #ffffff;
 }
+html{font-size:16px;}
 
 body {
   font-family: "Poppins", "Open Sans", sans-serif;
@@ -406,12 +407,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(8,145,130,0.55), rgba(8,145,178,0.45));
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  mix-blend-mode: multiply;
 }
 
 #hero .carousel-container {
@@ -423,29 +425,49 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
+  padding: 2rem;
 }
 
+/* Hero content presented as a centered card for contrast */
 #hero .carousel-content {
   text-align: center;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.92);
+  color: var(--text);
+  padding: 48px 36px;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(15,23,42,0.12);
+  backdrop-filter: blur(6px);
 }
 
 #hero h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
+  color: var(--text);
+  margin-bottom: 18px;
+  font-size: 56px;
   font-weight: 700;
+  line-height: 1.02;
 }
 
 #hero h2 span {
-  color: #5c9f24;
+  color: var(--accent);
 }
 
 #hero p {
-  width: 80%;
+  width: 100%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
+  margin: 0 auto 26px auto;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero h2 { font-size: 34px; }
+  #hero .carousel-content { padding: 28px 18px; }
+  #hero p { font-size: 15px; }
 }
 
 #hero .carousel-inner .carousel-item {

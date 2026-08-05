@@ -26,7 +26,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/theme.css" rel="stylesheet">
+  
   <!-- whatsapp css-->
   <link rel="stylesheet" href="style.css">
 
@@ -93,66 +94,34 @@
   </header>
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg) fixed center center;">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Automatiza tus procesos con RPA</h2>
-                <p class="animate__animated animate__fadeInUp">Los procesos manuales y repetitivos de tu negocio cuestan tiempo y dinero. Nosotros los solucionamos.</p>
-                <div>
-                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg) fixed center center;">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">E-Commerce</h2>
-                <p class="animate__animated animate__fadeInUp">Nosotros creamos para usted su negocio digital para que pueda concentrarse solo en sus ventas.</p>
-                <div>
-                  <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg) fixed center center;">
-            <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sitios Web</h2>
-                <p class="animate__animated animate__fadeInUp">Te ayudamos a publicar tu sitio web con un diseño simple y moderno, a un bajo costo de mantencion.</p>
-                <div>
-                  <a href="#team" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- ======= Hero Section - Modern redesign ======= -->
+  <section id="hero" class="hero-modern">
+    <div class="hero-inner">
+      <div class="hero-content container">
+        <h1>Automatizamos procesos con RPA e Inteligencia Artificial</h1>
+        <p class="lead">Implementaciones con Automation Anywhere, UiPath y Python. Aceleramos operaciones, reducimos costos y mejoramos la toma de decisiones mediante IA integrada.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-get-started">Contactanos</a>
+          <a href="#services" class="btn-outline">Nuestros servicios</a>
         </div>
 
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
+        <div class="hero-features mt-4">
+          <div class="feature-card">
+            <i class="bx bxs-robot" style="font-size:28px;color:var(--accent);"></i>
+            <h4>Robots a medida</h4>
+            <p>Automatizaciones fiables y escalables con plataformas líderes.</p>
+          </div>
+          <div class="feature-card">
+            <i class="bx bx-line-chart" style="font-size:28px;color:var(--accent);"></i>
+            <h4>Analítica e IA</h4>
+            <p>Modelos que optimizan decisiones y extracción de datos.</p>
+          </div>
+          <div class="feature-card">
+            <i class="bx bxs-shield" style="font-size:28px;color:var(--accent);"></i>
+            <h4>Soporte y mantenimiento</h4>
+            <p>Entrega continua y soporte post-despliegue.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -165,10 +134,16 @@
       <div class="container">
 
         <div class="row no-gutters">
-        <div class="video-box col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-          <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          <a href="https://www.youtube.com/watch?v=Lawmjth_9ds" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          <!-- https://www.youtube.com/watch?v=opmR3rJJJzw (musica de video) -->
+        <div class="col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+          <img src="assets/img/about.jpg" class="img-fluid rounded-lg shadow-lg" alt="Ilustración RPA">
+          <div class="tech-list mt-3 text-center w-100">
+            <small class="text-muted">Tecnologías usadas:</small>
+            <div class="d-flex justify-content-center align-items-center mt-2">
+              <span class="badge badge-light mr-2">Automation Anywhere</span>
+              <span class="badge badge-light mr-2">UiPath</span>
+              <span class="badge badge-light mr-2">Python</span>
+            </div>
+          </div>
         </div>
 
         
@@ -176,7 +151,7 @@
           <div class="content d-flex flex-column justify-content-center">
             <h3>¿Por qué es conveniente automatizar?</h3>
             <p>
-              Los beneficios para tu negocio son evidentes.
+              Los beneficios para tu negocio son evidentes. Implementamos soluciones RPA con Automation Anywhere, UiPath y Python, integrando técnicas de Inteligencia Artificial para optimizar decisiones, extracción de datos y eficiencia operativa.
             </p>
             <div class="row">
               <div class="col-md-6 icon-box">
@@ -874,6 +849,17 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    // Simple header scroll effect
+    (function(){
+      var header = document.getElementById('header');
+      function onScroll(){
+        if(window.scrollY > 20) header.classList.add('header-scrolled'); else header.classList.remove('header-scrolled');
+      }
+      document.addEventListener('scroll', onScroll);
+      onScroll();
+    })();
+  </script>
 </body>
 
 </html>
